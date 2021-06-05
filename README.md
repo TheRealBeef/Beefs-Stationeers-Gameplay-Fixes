@@ -3,14 +3,15 @@ Beef's Stationeers Gameplay Fixes<a name="TOP"></a>
 
 ## Completed features ##
 
-  - Changes to Rover max speed and torque values
+  - Changes to Rover max speed and torque values. Felt like the rover was useless once you had Hardsuit jetpack because it was so slow? Frustrated because a single 22.5 degree slope could stall out your sophisticicated space-exploring rover? Now you can explore much better. Just be careful not to fall off the edge of the map... (if you do, just wait inside the rover and once the terrain generates you'll be teleported back up to safety and can continue your mission)
+
+  - Changes to hydration / hunger. Your character can now fit a bunch of water bottles and several soup cans into his stomach at once. Recommended to turn hunger/thirst rate significantly higher (4 is what I'm using) so that you put more of a strain on your food/water supply. When you hear the rumble in your belly, you can bet you'll want to eat everything in sight....
   
 ## Planned Features ##
  
 #### Short term: ####
 
   - Implement configuation file to allow more values to be chosen
-  - Changes to hydration / hunger
   
 #### Long term: ####
 
