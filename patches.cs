@@ -1,38 +1,34 @@
-﻿using System;
-using HarmonyLib;
-using UnityEngine;
+﻿using Assets.Scripts.Objects;
+using Assets.Scripts.Objects.Entities;
 using Assets.Scripts.Vehicles;
-using Assets.Scripts.Objects;
-using UnityStandardAssets.ImageEffects;
+using HarmonyLib;
 
-namespace Beefy_Fixes
+namespace BeefyFixes
 {
-    // Changes to Rover
-    [HarmonyPatch(typeof(Rover), "Awake")]
-    public class RoverPatcher
+    [HarmonyPatch(typeof(Rover))]
+    public static class RoverPatches
     {
-        static void Postfix(Rover __instance)
+        [HarmonyPatch("Awake")]
+        [HarmonyPostfix]
+        public static void RoverHandlingPatch(Rover __instance)
         {
-            Rover RoverPatcher = __instance as Rover;
-
-            RoverPatcher.MaxSpeed = 24.0f; //3.0f original
-            RoverPatcher.MotorPower = 40.0f; //20.0f original
-            RoverPatcher.BrakePower = 10.0f; //5.0f original
+            Rover Rover = __instance;
+            Rover.MaxSpeed = BFConfig.MaxSpeed;
+            Rover.MotorPower = BFConfig.MotorPower;
+            Rover.BrakePower = BFConfig.BrakePower;
         }
     }
 
-    // Changes to Rover
-    [HarmonyPatch(typeof(Entity), "Awake")]
-    public class HungerHydrationPatcher
+    [HarmonyPatch(typeof(Human))]
+    public static class HumanPatches
     {
-        static void Postfix(Entity __instance)
+        [HarmonyPatch("Awake")]
+        [HarmonyPostfix]
+        static public void HungerHydrationPatch(Human __instance)
         {
-            Entity HungerHydrationPatcher = __instance as Entity;
-            HungerHydrationPatcher.MaxNutritionStorage = 40.0f; //5.0f original
-        }
-        static void Postfix()
-        {
-           Entity.MaxHydrationStorage = 30.0f; //5.0f original
+            Entity Player = __instance;
+            Player.MaxNutritionStorage = BFConfig.MaxNutritionStorage;
+            Human.MaxHydrationStorage = BFConfig.MaxHydrationStorage;
         }
     }
 }
