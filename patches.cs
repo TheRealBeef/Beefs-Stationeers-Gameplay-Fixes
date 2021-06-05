@@ -16,7 +16,7 @@ namespace Beefy_Fixes
             Rover RoverPatcher = __instance as Rover;
 
             RoverPatcher.MaxSpeed = 24.0f; //3.0f original
-            RoverPatcher.MotorPower = 30.0f; //20.0f original
+            RoverPatcher.MotorPower = 40.0f; //20.0f original
             RoverPatcher.BrakePower = 10.0f; //5.0f original
         }
     }
@@ -28,11 +28,11 @@ namespace Beefy_Fixes
         static void Postfix(Entity __instance)
         {
             Entity HungerHydrationPatcher = __instance as Entity;
-            HungerHydrationPatcher.MaxNutritionStorage = 30.0f; //5.0f original
+            HungerHydrationPatcher.MaxNutritionStorage = 40.0f; //5.0f original
         }
         static void Postfix()
         {
-           Entity.MaxHydrationStorage = 20.0f; //5.0f original
+           Entity.MaxHydrationStorage = 30.0f; //5.0f original
         }
     }
 }
