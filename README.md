@@ -7,7 +7,7 @@ Beef's Stationeers Gameplay Fixes<a name="TOP"></a>
   - Default Settings are now 24m/s maximum speed and 2x torque of vanilla.
 
   - Changes to hydration / hunger. Your character can now fit a bunch of water bottles and several soup cans into his stomach at once. Recommended to turn hunger/thirst rate significantly higher (4 is what I'm using) so that you put more of a strain on your food/water supply. When you hear the rumble in your belly, you can bet you'll want to eat everything in sight....
-  - Default Settings are now 8x the storage of food nutrition in your body, and 6x the water storage.
+  - Default Settings are now 8x the storage of food nutrition in your body, and 6x the hydration storage.
   
 ## Planned Features ##
  
