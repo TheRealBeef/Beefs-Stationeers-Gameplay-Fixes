@@ -1,6 +1,16 @@
 Beef's Stationeers Gameplay Fixes<a name="TOP"></a>
 ===================
 
+## Determining your own values for hunger/hydration ##
+
+https://www.desmos.com/calculator/aswgq5e1gk
+
+Graphs the % of hunger and % of hydration over time.
+
+- Set your desired world hunger rate (as you will establish in-game). This is a global multiplier applied to everything and ultimately determines your total food consumption.
+- Set your desired max nutrition storage, max hydration storage, and metabolism/dehydration rate.
+- Put those values into the config.
+
 ## Completed features ##
 
   - Changes to Rover max speed and torque values. Felt like the rover was useless once you had Hardsuit jetpack because it was so slow? Frustrated because a single 22.5 degree slope could stall out your sophisticicated space-exploring rover? Now you can explore much better. Just be careful not to fall off the edge of the map... (if you do, just wait inside the rover and once the terrain generates you'll be teleported back up to safety and can continue your mission)
