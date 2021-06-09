@@ -28,7 +28,9 @@ namespace BeefyFixes
         {
             Entity Player = __instance;
             Player.MaxNutritionStorage = BFConfig.MaxNutritionStorage;
+            Player.MetabolismRate = BFConfig.MetabolismRate;
             Human.MaxHydrationStorage = BFConfig.MaxHydrationStorage;
+            Human.BaseDehydrationRate = BFConfig.BaseDehydrationRate;
         }
     }
 }
